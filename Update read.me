@@ -1,40 +1,183 @@
-# Golden Hands Innovations
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Golden Hands Innovations — Drywall & Painting (Free Estimates)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drywall hanging, taping, finishing, premium painting, popcorn ceiling removal, garage repair, patches, and walk-through touch-ups in St. Charles & St. Louis. Free estimates. Call 636-578-2036.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#C9A54F; --ink:#1F2328; --bg:#0F1115; --card:#ffffff; }
+    *{box-sizing:border-box} html,body{margin:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f6f7f9;line-height:1.6}
+    /* Header */
+    .topbar{position:sticky;top:0;z-index:50;background:#111; color:#fff; box-shadow:0 2px 10px rgba(0,0,0,.2)}
+    .wrap{max-width:1200px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:.3px}
+    nav a{color:var(--brand);text-decoration:none;font-weight:600;margin-left:16px}
+    nav a:hover{opacity:.9}
+    /* Hero with background image */
+    .hero{
+      position:relative;min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;
+      color:#fff;background:#000;overflow:hidden
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:url('IMG_2944.jpeg') center/cover no-repeat; /* CHANGE to your image name if needed */
+      filter:brightness(.55) saturate(1.05);
+      transform:scale(1.02);
+    }
+    .hero::after{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.55));
+    }
+    .hero .inner{position:relative;z-index:1;padding:24px}
+    .hero h1{margin:0 0 8px 0;font-size:clamp(28px,4vw,46px);font-weight:800}
+    .hero p{margin:6px 0 18px 0;font-size:clamp(14px,2.2vw,18px);opacity:.95}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn:hover{filter:brightness(.96)}
+    /* Sections */
+    section{max-width:1100px;margin:0 auto;padding:36px 16px}
+    h2{color:var(--ink);font-size:28px;margin:0 0 14px 0}
+    .muted{color:#555}
+    /* Services cards */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 6px 24px rgba(18,38,63,.06)}
+    .card h3{margin:0 0 8px;font-size:18px}
+    /* Slideshow */
+    .slidewrap{position:relative;margin-top:10px}
+    .slideshow{position:relative;max-width:1000px;margin:0 auto}
+    .slide{display:none}
+    .slide img{width:100%;border-radius:12px;box-shadow:0 6px 24px rgba(18,38,63,.12)}
+    .arrow{cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);padding:10px 14px;color:#fff;font-weight:800;font-size:22px;border-radius:8px;background:rgba(0,0,0,.5)}
+    .arrow:hover{background:rgba(0,0,0,.7)}
+    .prev{left:8px}.next{right:8px}
+    .dots{text-align:center;margin-top:12px}
+    .dot{cursor:pointer;height:10px;width:10px;margin:0 5px;background:#cfd3da;border-radius:50%;display:inline-block}
+    .dot.active{background:var(--brand)}
+    /* Contact box */
+    .contact{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 24px rgba(18,38,63,.06)}
+    .contact p{margin:6px 0}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    /* Footer */
+    footer{background:#111;color:#fff;margin-top:36px}
+    footer .wrap{padding:18px 16px}
+  </style>
+</head>
+<body>
 
-**Professional Drywall & Painting — St. Charles & St. Louis, MO**
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">Golden Hands Innovations</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-Golden Hands Innovations provides clean, reliable, and high-quality drywall and painting services for homeowners, contractors, and property managers. We combine union-trained skill with attention to detail to deliver smooth finishes and sharp paint lines every time.  
+<section class="hero">
+  <div class="inner">
+    <h1>Drywall & Painting Done Right</h1>
+    <p>Hanging • Taping • Finishing • Popcorn Removal • Garage Repair • Patches • Walk-Through Touch-Ups • Premium Painting</p>
+    <a class="btn" href="tel:16365782036">📞 Free Estimates — 636-578-2036</a>
+  </div>
+</section>
 
----
+<section id="services">
+  <h2>Services</h2>
+  <p class="muted">St. Charles & St. Louis Metro • Union-trained quality</p>
+  <div class="grid">
+    <div class="card"><h3>Popcorn Ceiling Removal</h3><p>Contained removal + smooth Level 4–5 finish.</p></div>
+    <div class="card"><h3>Garage Drywall Repair</h3><p>Cracks, holes, seam failures — repaired, primed, and painted.</p></div>
+    <div class="card"><h3>Patches & Touch-Ups</h3><p>Small dings to large cut-outs; textures blended to match.</p></div>
+    <div class="card"><h3>New & Existing Drywall</h3><p>Professional hanging, taping, and clean finishing.</p></div>
+    <div class="card"><h3>Premium Painting</h3><p>Sharp lines, durable coatings, smooth coverage.</p></div>
+    <div class="card"><h3>Walk-Through Touch-Ups</h3><p>Final punch-list and make-ready detailing.</p></div>
+  </div>
+</section>
 
-## 🛠 Services We Offer
-- Hanging, taping, and finishing drywall (new & existing)
-- Popcorn ceiling removal (smooth Level 4–5 finish)
-- Garage drywall repairs
-- Patches & walk-through touch-ups
-- Premium interior painting
-- Final punch-list prep for sales or inspections
+<section id="gallery">
+  <h2>Recent Projects</h2>
+  <div class="slidewrap">
+    <div class="slideshow">
+      <!-- Use the exact image names already in your repo -->
+      <div class="slide"><img src="IMG_2885.jpeg" alt=""></div>
+      <div class="slide"><img src="IMG_2890.jpeg" alt=""></div>
+      <div class="slide"><img src="IMG_2944.jpeg" alt=""></div>
+      <div class="slide"><img src="IMG_2967.png"  alt=""></div>
+      <div class="slide"><img src="IMG_3071.jpeg" alt=""></div>
+      <div class="slide"><img src="IMG_3265.jpeg" alt=""></div>
+      <div class="slide"><img src="IMG_3703.jpeg" alt=""></div>
+      <div class="slide"><img src="IMG_3726.jpeg" alt=""></div>
+      <!-- If you have two long random filenames, add them here too -->
+      <!-- <div class="slide"><img src="B15AEF7B-....jpeg" alt=""></div> -->
+      <!-- <div class="slide"><img src="IMG_5D105DDF-....jpeg" alt=""></div> -->
 
----
+      <div class="prev arrow" onclick="plusSlides(-1)">❮</div>
+      <div class="next arrow" onclick="plusSlides(1)">❯</div>
+    </div>
+    <div class="dots"></div>
+  </div>
+</section>
 
-## 📸 Recent Projects
-See our work in the [Gallery section](https://YOUR-USERNAME.github.io/Golden-hands-innovations/#gallery) of our live website.  
-We showcase drywall hanging, finishing, ceiling repairs, and painting transformations.
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <p><strong>Free Estimates</strong> — call or email anytime.</p>
+    <p><strong>Phone:</strong> <a href="tel:16365782036">636-578-2036</a></p>
+    <p><strong>Email:</strong> <a href="mailto:goldenhandsinnovations.com">goldenhandsinnovations.com</a></p>
+    <div class="ctaRow">
+      <a class="btn" href="tel:16365782036">📞 Call Now</a>
+      <a class="btn" href="mailto:goldenhandsinnovations.com?subject=Free%20Estimate&body=Name:%0APhone:%0AAddress:%0AService%20Needed:%0ATimeline:%0ADetails:">✉️ Email Request</a>
+    </div>
+  </div>
+</section>
 
----
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Golden Hands Innovations • Drywall & Painting • St. Charles, MO</div>
+  </div>
+</footer>
 
-## 📍 Service Area
-- St. Charles, MO  
-- St. Louis Metro Area  
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
 
----
+  // Slideshow
+  let idx = 0, timer;
+  const slides = document.getElementsByClassName('slide');
+  const dotsBox = document.querySelector('.dots');
 
-## 📞 Contact
-- **Phone:** [636-578-2036](tel:16365782036)  
-- **Email:** goldenhandsinnovations.com  
+  function renderDots(){
+    dotsBox.innerHTML = '';
+    for(let i=0;i<slides.length;i++){
+      const d=document.createElement('span');
+      d.className='dot'+(i===0?' active':'');
+      d.onclick=()=>goTo(i);
+      dotsBox.appendChild(d);
+    }
+  }
+  function show(i){
+    for (let s of slides) s.style.display='none';
+    slides[i].style.display='block';
+    const dots = document.getElementsByClassName('dot');
+    for (let j=0;j<dots.length;j++) dots[j].classList.toggle('active', j===i);
+  }
+  function next(n=1){
+    idx = (idx + n + slides.length) % slides.length;
+    show(idx);
+  }
+  function goTo(n){ idx=n; show(idx); reset(); }
+  function play(){ timer=setInterval(()=>next(1), 4000); }
+  function reset(){ clearInterval(timer); play(); }
+  function plusSlides(n){ next(n); reset(); }
 
----
+  // Init
+  if(slides.length){ renderDots(); show(idx); play(); }
+</script>
 
-## 💡 Why Choose Us?
-- Free Estimates  
-- On-time and professional work  
-- Clean jobsites and customer satisfaction guaranteed  
+</body>
+</html>

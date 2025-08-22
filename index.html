@@ -7,9 +7,9 @@
   <meta name="description" content="Hanging, taping, finishing drywall • Popcorn removal • Garage repair • Patches • Walk-through touch-ups • Premium painting. St. Charles & St. Louis, MO. Call 636-578-2036.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
     :root{ --brand:#C9A54F; --ink:#12161B; --bg:#0E1014; --card:#FFFFFF; }
-
     *{box-sizing:border-box}
     html,body{margin:0}
     body{
@@ -22,18 +22,18 @@
         radial-gradient(closest-side, rgba(0,0,0,.02), transparent 70%) -20px -20px/120px 120px;
     }
 
-    /* Sticky top bar */
+    /* Sticky header */
     .topbar{position:sticky;top:0;z-index:60;background:#111;color:#fff;box-shadow:0 6px 24px rgba(0,0,0,.2)}
     .wrap{max-width:1200px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
     .brand{font-weight:800;letter-spacing:.2px}
     nav a{color:var(--brand);text-decoration:none;font-weight:600;margin-left:16px}
     nav a:hover{opacity:.9}
 
-    /* HERO (drywall background + dark overlay) */
+    /* HERO (uses one of your wide images) */
     .hero{position:relative;min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#000;overflow:hidden}
     .hero::before{
       content:"";position:absolute;inset:0;
-      background:url('IMG_3265.jpeg') center/cover no-repeat; /* wide garage drywall pic */
+      background:url('IMG_3265.jpeg') center/cover no-repeat; /* change to another filename if you prefer */
       filter:brightness(.55) saturate(1.05); transform:scale(1.02);
     }
     .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.55))}
@@ -113,7 +113,7 @@
   <h2>Recent Projects</h2>
   <div class="slidewrap">
     <div class="slideshow">
-      <!-- Using the exact filenames in your repo -->
+      <!-- EXACT filenames from your repo -->
       <div class="slide"><img src="IMG_2885.jpeg" alt=""></div>
       <div class="slide"><img src="IMG_2890.jpeg" alt=""></div>
       <div class="slide"><img src="IMG_2944.jpeg" alt=""></div>
@@ -123,6 +123,20 @@
       <div class="slide"><img src="IMG_3703.jpeg" alt=""></div>
       <div class="slide"><img src="IMG_3726.jpeg" alt=""></div>
       <div class="slide"><img src="IMG_5D105DDF-D99D-4BFD-A9B4-D5FF35D6BAD2.jpeg" alt=""></div>
+
+      <!-- New numeric filenames you uploaded -->
+      <div class="slide"><img src="1119127624056063600.jpeg" alt=""></div>
+      <div class="slide"><img src="3444957848362783221.jpeg" alt=""></div>
+      <div class="slide"><img src="3664118881028589060.jpeg" alt=""></div>
+      <div class="slide"><img src="4106677422269296160.jpeg" alt=""></div>
+      <div class="slide"><img src="4600653371817607373.jpeg" alt=""></div>
+      <div class="slide"><img src="5778393983823342628.jpeg" alt=""></div>
+      <div class="slide"><img src="6149442501277391009.jpeg" alt=""></div>
+      <div class="slide"><img src="6199218127975349206.jpeg" alt=""></div>
+      <div class="slide"><img src="6893443962152528149.jpeg" alt=""></div>
+      <div class="slide"><img src="834418607472292499.jpeg" alt=""></div>
+      <div class="slide"><img src="8429404166858652458.jpeg" alt=""></div>
+      <div class="slide"><img src="8583347312604256936.jpeg" alt=""></div>
 
       <div class="prev arrow" onclick="plusSlides(-1)">❮</div>
       <div class="next arrow" onclick="plusSlides(1)">❯</div>
@@ -136,7 +150,7 @@
   <div class="contact">
     <p><strong>Free Estimates</strong> — call or email anytime.</p>
     <p><strong>Phone:</strong> <a href="tel:16365782036">636-578-2036</a></p>
-    <!-- If you have a real email like info@goldenhandsinnovations.com, replace below -->
+    <!-- replace with your real email if you have one like info@goldenhandsinnovations.com -->
     <p><strong>Email:</strong> <a href="mailto:goldenhandsinnovations.com">goldenhandsinnovations.com</a></p>
     <div class="ctaRow">
       <a class="btn" href="tel:16365782036">📞 Call Now</a>
@@ -152,10 +166,10 @@
 </footer>
 
 <script>
-  // year
+  // Year in footer
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // Slideshow
+  // Slideshow logic (autoplay + dots + arrows)
   let idx = 0, timer;
   const slides = document.getElementsByClassName('slide');
   const dotsBox = document.querySelector('.dots');
@@ -184,38 +198,7 @@
   function reset(){ clearInterval(timer); play(); }
   function plusSlides(n){ next(n); reset(); }
 
-  // Init
-  if(slides.length){ renderDots(); show(idx); play(); }<div class="slideshow">
-  <!-- Existing images -->
-  <div class="slide"><img src="IMG_2885.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_2890.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_2944.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_2967.png"  alt=""></div>
-  <div class="slide"><img src="IMG_3071.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_3265.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_3703.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_3726.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_5D105DDF-D99D-4BFD-A9B4-D5FF35D6BAD2.jpeg" alt=""></div>
-
-  <!-- New uploaded images -->
-  <div class="slide"><img src="1119127624056063600.jpeg" alt=""></div>
-  <div class="slide"><img src="3444957848362783221.jpeg" alt=""></div>
-  <div class="slide"><img src="834418607472292499.jpeg" alt=""></div>
-  <div class="slide"><img src="6199218127975349206.jpeg" alt=""></div>
-  <div class="slide"><img src="8429404166858652458.jpeg" alt=""></div>
-  <div class="slide"><img src="4600653371817607373.jpeg" alt=""></div>
-  <div class="slide"><img src="8583347312604256936.jpeg" alt=""></div>
-  <div class="slide"><img src="5778393983823342628.jpeg" alt=""></div>
-  <div class="slide"><img src="3664118881028589060.jpeg" alt=""></div>
-  <div class="slide"><img src="4106677422269296160.jpeg" alt=""></div>
-  <div class="slide"><img src="6149442501277391009.jpeg" alt=""></div>
-  <div class="slide"><img src="6893443962152528149.jpeg" alt=""></div>
-  <div class="slide"><img src="IMG_3726.jpeg" alt=""></div>
-
-  <!-- Navigation arrows -->
-  <div class="prev arrow" onclick="plusSlides(-1)">❮</div>
-  <div class="next arrow" onclick="plusSlides(1)">❯</div>
-</div>
+  if(slides.length){ renderDots(); show(idx); play(); }
 </script>
 
 </body>
